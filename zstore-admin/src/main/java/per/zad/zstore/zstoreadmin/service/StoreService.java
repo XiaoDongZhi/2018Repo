@@ -1,6 +1,6 @@
 package per.zad.zstore.zstoreadmin.service;
 
-public class StoreService{
+public class StoreService {
     private String item;
 
     public String saleItem() {

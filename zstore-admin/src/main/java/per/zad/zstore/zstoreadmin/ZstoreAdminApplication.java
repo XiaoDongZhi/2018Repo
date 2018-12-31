@@ -1,4 +1,5 @@
 package per.zad.zstore.zstoreadmin;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,9 +15,10 @@ public class ZstoreAdminApplication {
     private StoreService storeService;
 
     @RequestMapping("/")
-    public String index(){
+    public String index() {
         return storeService.saleItem();
     }
+
     public static void main(String[] args) {
         SpringApplication.run(ZstoreAdminApplication.class, args);
     }

@@ -13,7 +13,7 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean
 @Configuration
 @EnableConfigurationProperties(ZstoreProperties.class)
 @ConditionalOnClass(StoreService.class)
-@ConditionalOnProperty(prefix = "phone",value = "huawei",matchIfMissing = true)
+@ConditionalOnProperty(prefix = "phone", value = "huawei", matchIfMissing = true)
 public class ZstoreProptertiesAutoConfig {
     @Autowired
     private ZstoreProperties zstoreProperties;
